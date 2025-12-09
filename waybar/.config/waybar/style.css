@@ -1,0 +1,30 @@
+@import "mocha.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "0xProtoNerdFont", sans-serif;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,0);
+    color: @text;
+    border: 0px;
+}
+
+.module {
+  background-color: @crust;
+  border-radius: 50px;
+  color: @text;
+  margin: 2px 0;
+  padding: 0px 10px;
+}
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left {
+    margin-left: 10px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right {
+    margin-right: 10px;
+}
