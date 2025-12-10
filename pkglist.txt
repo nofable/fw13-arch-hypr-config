@@ -24,6 +24,7 @@ mako
 man-db
 neovim
 networkmanager
+openssh
 qt5-wayland
 qt6-wayland
 resvg
