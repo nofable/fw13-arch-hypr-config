@@ -1,9 +1,10 @@
 // -*- mode: jsonc -*-
 {
+    "reload_style_on_change": true,
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/submap",
+        "hyprland/workspaces"
+        // "hyprland/submap",
     ],
     "modules-center": [
     ],
@@ -19,7 +20,10 @@
     ],
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d}",
+        "calendar": {
+          "weeks-pos": "left"
+        }
     },
     "cpu": {
         "format": "{usage}% CPU",

@@ -3,21 +3,25 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "0xProtoNerdFont", sans-serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 window#waybar {
     background-color: rgba(0,0,0,0);
-    color: @text;
-    border: 0px;
+    /* color: @text; */
+    /* border: 0px; */
 }
 
 .module {
   background-color: @crust;
-  border-radius: 50px;
+  border-radius: 20px;
   color: @text;
-  margin: 2px 0;
-  padding: 0px 10px;
+  margin: 1px 0;
+  padding: 0px 20px;
+}
+
+.box.module {
+  /* padding: 0 100px; */
 }
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left {
@@ -27,4 +31,39 @@ window#waybar {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right {
     margin-right: 10px;
+}
+
+#workspaces button.active {
+  color: @text;
+}
+
+#workspaces button:hover {
+}
+
+#clock {
+  color: @rosewater;
+}
+
+#battery {
+  color: @flamingo;
+}
+
+#backlight {
+  color: @pink;
+}
+
+#temperature {
+  color: @rosewater;
+}
+
+#memory {
+  color: @mauve;
+}
+
+#cpu {
+  color: @yellow;
+}
+
+#network {
+  color: @peach;
 }
