@@ -11,7 +11,6 @@ fzf
 git
 hypridle
 hyprland
-hyprlauncher
 hyprlock
 hyprpaper
 imagemagick
@@ -24,11 +23,16 @@ mako
 man-db
 neovim
 networkmanager
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
 openssh
 qt5-wayland
 qt6-wayland
 resvg
 ripgrep
+sbctl
 starship
 stow
 sudo
