@@ -16,12 +16,6 @@ if ! command -v yay >/dev/null 2>&1; then
   rm -rf "$tmpdir"
 fi
 
-# Setup .stowrc
-STOWRC="$HOME/.stowrc"
-if [ ! -e "$STOWRC" ]; then
-  echo "--dir=$DOTFILES" >"$STOWRC"
-fi
-
 # Backup .bashrc if needed
 BASHRC="$HOME/.bashrc"
 if [ -L "$BASHRC" ]; then
@@ -33,6 +27,13 @@ elif [ -e "$BASHRC" ]; then
 fi
 
 # Stow all packages
-for pkg in bash fonts hypr kitty nvim starship waybar yazi chromium; do
-  stow "$pkg"
-done
+stow -t "$HOME" -d "$DOTFILES" bash
+# TODO We need to make sure /.local/share/fonts exists
+stow -t "$HOME/.local/share/fonts" -d "$DOTFILES" fonts
+stow -t "$HOME/.config" -d "$DOTFILES" hypr
+stow -t "$HOME/.config" -d "$DOTFILES" kitty
+stow -t "$HOME/.config" -d "$DOTFILES" mako
+stow -t "$HOME/.config" -d "$DOTFILES" nvim
+stow -t "$HOME/.config" -d "$DOTFILES" starship
+stow -t "$HOME/.config" -d "$DOTFILES" waybar
+stow -t "$HOME/.config" -d "$DOTFILES" yazi
