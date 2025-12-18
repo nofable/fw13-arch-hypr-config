@@ -17,6 +17,7 @@ imagemagick
 jq
 kitty
 less
+libnotify
 linux
 linux-firmware
 mako
