@@ -28,7 +28,8 @@ fi
 
 # Stow all packages
 stow -t "$HOME" -d "$DOTFILES" bash
-# TODO We need to make sure /.local/share/fonts exists
+# We need to make sure /.local/share/fonts exists
+mkdir -p "$HOME/.local/share/fonts"
 stow -t "$HOME/.local/share/fonts" -d "$DOTFILES" fonts
 stow -t "$HOME/.config" -d "$DOTFILES" hypr
 stow -t "$HOME/.config" -d "$DOTFILES" kitty
