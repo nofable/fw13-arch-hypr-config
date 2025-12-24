@@ -4,7 +4,7 @@ This repo is the config for my Framework 13 Arch Linux Hyprland setup.
 It is the result of an exploratory project where my goal was to setup my developer environment in Arch Linux on a Framework Laptop.
 
 The write up can be found here:
-https://notes.nofable.me/p/Framework+13+Arch+Linux+Hyprland+Project
+https://notes.nofable.me/p/Framework+13+Arch+Linux+Hyprland
 
 
 ## Installation
